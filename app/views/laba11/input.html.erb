@@ -1,0 +1,9 @@
+<h1>Laba11#input</h1>
+<p>Find me in app/views/laba11/input.html.erb</p>
+<h1>Лабораторная работа № 11 "Поиск счастливых шестизначных номеров"</h1>
+<%= form_tag("/laba11/view", :method => "get") do %>
+ <%= label_tag("Введите N (0 ≤ n ≤ 999999):") %>
+ <%= text_field_tag(:happy_numbers_quantity) %> <br/>
+ <br/>
+ <%= submit_tag("Выполнить поиск") %>
+<% end %>

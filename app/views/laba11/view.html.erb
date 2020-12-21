@@ -1,0 +1,11 @@
+<h1>Laba11#view</h1>
+<h1>Результат</h1>
+<table>
+  <tr><th>Порядковый номер</th><th>Билет</th></tr>
+  <% lv_count = 0 %> 
+  <% @result.each do |value| lv_count = lv_count + 1 %>
+    <tr><th><%= lv_count %></th><th><%= "#{value}" %> </th></tr>
+  <%end %>
+</table>
+<p id="result"><%= @result %></p>
+<%= link_to "Повторить поиск", :laba11_input %>
